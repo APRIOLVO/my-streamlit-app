@@ -5,13 +5,13 @@ st.title("Investment & Valuation Calculator")
 # --- User Inputs ---
 #TAM = st.number_input("TAM ($M)", min_value=0.0, step=1000.0) * 1000000
 
-NumberConsumers = st.number_input("Number of Potential Users (K)", min_value=0.0, step=1.0) * 1,000
+NumberConsumers = st.number_input("Number of Potential Users (K)", min_value=0.0, step=1.0) * 1000
 RevPerConsumer = st.number_input("Revenue Per User ($)", min_value=0.0, step=1.0)
 Penetration = st.number_input("Penetration (%)", min_value=0.0, max_value=100.0, step=1.0)
 ChanceSuccess = st.number_input("Chance of Success (%)", min_value=0.0, max_value=100.0, step=1.0)
 DiscountRate = st.number_input("Discount Rate (%)", min_value=0.0, max_value=100.0, step=0.1)
-ProposedValuation = st.number_input("Proposed Valuation ($M)", min_value=0.0, step=1000.0) * 1,000,000
-InvestmentAmount = st.number_input("Investment Amount ($K)", min_value=0.0, step=1000.0) * 1,000
+ProposedValuation = st.number_input("Proposed Valuation ($M)", min_value=0.0, step=1000.0) * 1000000
+InvestmentAmount = st.number_input("Investment Amount ($K)", min_value=0.0, step=1000.0) * 1000
 
 TAM = RevPerConsumer * NumberConsumers
 
